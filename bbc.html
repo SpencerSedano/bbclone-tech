@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Technology - BBC News</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		body {
 			margin:0;
@@ -9,103 +10,248 @@
 		.bar-border {
 			border-right-style: solid;
 			border-width:1px;
+			border-color:#E4E4E4;
 		}
 		#top-bar {
-			width:1450px;
+			width:100%;
 			position:absolute;
 		}
-		#logo-space {
-			position:absolute;
+		#menu-1 {
+			position:relative;
+			left:180px;
+			width:75%;
 		}
 		#bbc-logo {
-			width:100px;
-			position:absolute;
-			left:170px;
-			float:left;
-			padding:7px;
+			width:95px;
+			padding:6px 2px;
 		}
 		#sign-in {
-			position:absolute;
-			left:300px;
-			padding:7px;
-		}
-		#sign-in-image {
-			margin-right:5px;
-			width:30px;
-		}
-		#sign-in-text {
+			width:158px;
 			position:relative;
-			bottom:9px;
-			margin-right:120px;
+			left:100px;
+			bottom:44px;
+			padding:6px;
+		}
+		#sign-in img {
+			width:25px;
+			padding:2px 1px;
+		}
+		#sign-in span {
+			position:relative;
+			left:3px;
+			bottom:7px;
+			font-size:13px;
+			font-family: Helmet, Freesans, Helvetica;
 			font-weight: bold;
 		}
 		.position-menu {
-			float:left;
+			width:40px;
+			height:20px;
 			position:relative;
-			left:520px;
-			padding:15px;
+			bottom:87px;
+			left:275px;
+			float:left;
+			padding:13px 7px;
+			font-size:12px;
+			font-family: Helmet, Freesans, Helvetica;
 			font-weight:bold;
 		}
-		#more-arrow {
-			width:15px;
-			position:relative;
-			left:10px;
+		#weather-box {
+			width:53px;
 		}
+
 		#more-position {
+			width:130px;
+			padding:10px;
+		}
+		#more-arrow {
 			position:relative;
+			left:70px;
+			width:15px;
 		}
 		#search-box {
 			position:relative;
-			bottom:16px;
-			height:30px;
-			background-color:black;
+			bottom:5px;
+			height:25px;
+			padding:0 8px;
+			background-color:#E4E4E4;
+			border-style:none;
 		}
 		#lupa {
 			position:relative;
-			right:6px;
-			bottom:7px;
-			width:25px;
-			height:28px;
+			left:185px;
+			bottom:30px;
+			width:24px;
+		}
+
+
+
+
+
+
+		#middle-bar {
+			width:100%;
+			height:89px;
+			position:absolute;
+			top:43px;
+			background-color:#BB1919;
+		}
+		h1 {
+			margin:0;
+			padding:0;
+			position:relative;
+			left:180px;
+			top:5px;
+			font-weight: normal;
+			font-size:40px;
+			font-family: Helmet, Freesans, Helvetica;
+			color:white;
+		}
+		#bottom-bar {
+			width:100%;
+			height:35px;
+			position:relative;
+			top:10px;
+			background-color:#A91717;
+		}
+		.position-menu-2 {
+			float:left;
+			position:relative;
+			left:173px;
+			padding:8px 5px;
+			color:white;
+			font-family: Helmet, Freesans, Helvetica;
+			font-size:15px;
+		}
+		.bar-border-smaller {
+			border-right-style: solid;
+			border-width:1px;
+			padding-right:9px;
+			border-color:#BB1919;
+		}
+		#more-arrow-two {
+			position:relative;
+			top:3px;
+			margin-left:5px;
+		}
+
+		a {
+			text-decoration:none;
+			color:white;
+		}
+
+		.clear {
+			clear:both;
+		}
+
+		.position-menu-2 a:hover {
+			text-decoration:underline;
+			color:white;
+		}
+
+		#first-box {
+			width:100%;
+			height:370px;
+		}
+		#heading-tech {
+			clear:both;
+			text-decoration:underline;
+			text-decoration-color:#BB1919;
+			position:relative;
+			bottom:11px;
+			color:#404040;
+			font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+			font-size:10px;
+		}
+		#uber-title {
+			position:relative;
+			bottom:30px;
+			font-size:35px;
+			font-family: Helmet, Freesans, Helvetica;
+			color:#7C7C7C;
+		}
+		#uber-heading {
+			width:36%;
+			position:relative;
+			bottom:46px;
+			font-family: Helmet, Freesans, Helvetica, Arial, sans-serif
+			font-size:10px;
+		}
+		#uber-image {
+			width:400px;
+			height:230px;
+			position:relative;
+			left:260px;
+			bottom:220px;
+		}
+		#date-clock {
+			padding-right:5px;
 		}
 	</style>
 </head>
 <body>
 	
 	<div id="top-bar">
-	</div>
-	<div id="logo-space">
-		<img src="images/bbc-logo.png" id="bbc-logo" class="bar-border">
-	</div>	
-	<div id="sign-in" class="bar-border">
-		<img src="images/sign-in.png" id="sign-in-image">
-			<span id="sign-in-text" >Sign in</span>
+		<div id="menu-1">
+			<img id="bbc-logo" class="bar-border" src="images/bbc-logo.png">	
+			<div id="sign-in" class="bar-border">
+				<img src="images/sign-in.png">
+					<span>Sign in</span>
+			</div>
+		
+			<div class="position-menu bar-border">News</div>
+			<div class="position-menu bar-border">Sport</div>	
+			<div id="weather-box" class="position-menu bar-border">Weather</div>	
+			<div class="position-menu bar-border">Shop</div>	
+			<div class="position-menu bar-border">Earth</div>	
+			<div class="position-menu bar-border">Travel</div>	
+			<div id="more-position" class="position-menu bar-border" >
+				<span>More</span>
+				<img id="more-arrow" src="images/more-arrow.png">
+			</div>	
+			<div class="position-menu">
+				<input id="search-box" type="text" placeholder="Search">
+				<img id="lupa" src="images/lupa.png">
+			</div>	
+		</div>
 	</div>
 
-	<div class="position-menu bar-border">
-		News
+	<div id="middle-bar">
+		<h1>NEWS</h1>
+		<div id="bottom-bar">
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">Home</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">Video</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">World</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">UK</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">Business</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">Tech</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">Science</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">Magazine</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">Entertainment &amp; Arts</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">Health</a></span></div>
+			<div class="position-menu-2"><span class="bar-border-smaller"><a href="">World News TV</a></span></div>
+			<div class="position-menu-2">
+				<span><a href="">More</a></span>
+				<i id="more-arrow-two" class="fa fa-caret-down" aria-hidden="true"></i>	
+			</div>
+		</div>
 	</div>
-	<div class="position-menu bar-border">
-		Sport
-	</div>	
-	<div class="position-menu bar-border">
-		Weather
-	</div>	
-	<div class="position-menu bar-border">
-		Shop
-	</div>	
-	<div class="position-menu bar-border">
-		Earth
-	</div>	
-	<div class="position-menu bar-border">
-		Travel
-	</div>	
-	<div id="more-position" class="position-menu bar-border" >
-		More
-		<img id="more-arrow" src="images/more-arrow.png">
-	</div>	
-	<div class="position-menu">
-		<input id="search-box" type="text" placeholder="Search">
-		<img id="lupa" src="images/lupa.png">
-	</div>	
+
+	<div class="clear"></div>
+<!--
+	<div id="first-box">	
+		<div id="heading-tech">
+			<h1>Technology</h1>
+		</div>
+		<h2 id="uber-title">Uber faces criminal inquiry in US</h2>
+		<div id="uber-heading">
+			<p>The inquiry will look into Uber's use of software that helped it spot and avoid official scrutiny.</p>
+			<div id="date-type">
+					<i id="date-clock" class="fa fa-clock-o" aria-hidden="true"></i>5 May 2017 | Technology 
+			</div>
+			<p>Uber Launches food delivery service <br> Uber to demo flying cars network by 2020</p>
+		</div>
+		<img id="uber-image" src="https://ichef.bbci.co.uk/news/485/cpsprodpb/2743/production/_95915001_mediaitem95915000.jpg">
+	</div> -->
 </body>
 </html>
