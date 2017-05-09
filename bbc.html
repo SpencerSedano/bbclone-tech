@@ -6,6 +6,7 @@
 		body {
 			margin:0;
 			padding:0;
+			font-family: Helmet, Freesans, Helvetica;
 		}
 		.bar-border {
 			border-right-style: solid;
@@ -83,12 +84,6 @@
 			bottom:30px;
 			width:24px;
 		}
-
-
-
-
-
-
 		#middle-bar {
 			width:100%;
 			height:89px;
@@ -135,62 +130,98 @@
 			margin-left:5px;
 		}
 
-		a {
+		.position-menu-2 a {
 			text-decoration:none;
 			color:white;
 		}
-
-		.clear {
-			clear:both;
-		}
-
 		.position-menu-2 a:hover {
 			text-decoration:underline;
 			color:white;
 		}
-
-		#first-box {
-			width:100%;
-			height:370px;
-		}
-		#heading-tech {
+		.clear {
 			clear:both;
-			text-decoration:underline;
-			text-decoration-color:#BB1919;
-			position:relative;
-			bottom:11px;
-			color:#404040;
-			font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-			font-size:10px;
 		}
-		#uber-title {
+		#page-container {
+			position:absolute;
+			width:100%;
+			top:135px;
+		}
+		#first-box {
+			width: 50%;
+			margin: 0 auto;
 			position:relative;
-			bottom:30px;
-			font-size:35px;
+			right:185px;
+			border-right: 1px solid #CCCCCC;
+		}
+		h2 {
+			position:relative;
+			left:176px;
+			margin:0;
+			padding:4px;
+			font-weight:normal;
 			font-family: Helmet, Freesans, Helvetica;
-			color:#7C7C7C;
+			font-size:20px;
+			border-bottom:2.5px solid #a91717;
+			width:105px;
 		}
-		#uber-heading {
-			width:36%;
+		h3 a {
+			color:black;
+            font-size: 30px;
+            text-decoration: none;
+		}
+		h3 a:hover {
+			color:#1167a8;
+		}
+		#summary-text {
+			width:250px;
+			color:#5a5a5a;
+			font-size:15px;
+		}
+		.date {
+			width:200px;
+			font-size:13px;
+		}
+		.date a {
+			text-decoration:none;
+			color:#A91717;
+		}
+		.date a:hover {
+			color:#1167a8;
+		}
+		#summary-image {
 			position:relative;
-			bottom:46px;
-			font-family: Helmet, Freesans, Helvetica, Arial, sans-serif
-			font-size:10px;
-		}
-		#uber-image {
+			left:250px;
+			bottom:90px;
 			width:400px;
-			height:230px;
-			position:relative;
-			left:260px;
-			bottom:220px;
 		}
-		#date-clock {
-			padding-right:5px;
+		#next-box {
+			width:30%;
+			float:right;
+			position:relative;
+			bottom:380px;
+			right:100px;
+		}
+		h4 {
+			padding:15px 0;
+			margin:0;
+			font-weight: normal;
+			font-size:20px;
+		}
+		#video-position {
+			position:relative;
+			bottom:70px;
+			left:120px;
+		}
+		#first-video p {
+			margin:0;
+			padding:3px;
+			font-weight:bold;
+			font-size:18px;
 		}
 	</style>
 </head>
 <body>
-	
+
 	<div id="top-bar">
 		<div id="menu-1">
 			<img id="bbc-logo" class="bar-border" src="images/bbc-logo.png">	
@@ -216,6 +247,7 @@
 		</div>
 	</div>
 
+	<div class="clear"></div>
 	<div id="middle-bar">
 		<h1>NEWS</h1>
 		<div id="bottom-bar">
@@ -237,21 +269,55 @@
 		</div>
 	</div>
 
+
 	<div class="clear"></div>
-<!--
-	<div id="first-box">	
-		<div id="heading-tech">
-			<h1>Technology</h1>
-		</div>
-		<h2 id="uber-title">Uber faces criminal inquiry in US</h2>
-		<div id="uber-heading">
-			<p>The inquiry will look into Uber's use of software that helped it spot and avoid official scrutiny.</p>
-			<div id="date-type">
-					<i id="date-clock" class="fa fa-clock-o" aria-hidden="true"></i>5 May 2017 | Technology 
+
+	<div id="page-container">
+		<h2>Technology</h2>
+		<div id="first-box">
+				
+			<h3><a href="">Can Amazon's assitant stay on top?</a></h3>
+			<p id="summary-text">The retail giant is set to announce its next Alexa assistant - will it reveal strengths or shortcomings?</p>
+			<div class="date"><i class="fa fa-clock-o" aria-hidden="true"></i>
+			9 May 2017 | <a href="">Technology</a> | 79
 			</div>
-			<p>Uber Launches food delivery service <br> Uber to demo flying cars network by 2020</p>
+			<img id="summary-image" src="images/amazon.png">
 		</div>
-		<img id="uber-image" src="https://ichef.bbci.co.uk/news/485/cpsprodpb/2743/production/_95915001_mediaitem95915000.jpg">
-	</div> -->
+
+
+		<div id="next-box">
+			<h4>Watch/Listen</h4>
+			<div id="first-video">
+				<div class="date">
+					<img src="images/video-1.png">
+					<div id="video-position">
+						<p>Virtual reality comes to the pub</p>
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+						8 May 2017 | <a href="">Technology</a>
+					</div>
+				</div>
+			</div>
+			<div id="first-video">
+				<div class="date">
+					<img src="images/video-2.png">
+					<div id="video-position">
+						<p>Lost at the airport? This robot can help</p>
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+						5 May 2017 | <a href="">Technology</a>
+					</div>
+				</div>
+			</div>
+			<div id="first-video">
+				<div class="date">
+					<img src="images/video-3.png">
+					<div id="video-position">
+						<p>The self-balancing, sprinting robot</p>
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+						5 May 2017 | <a href="">Technology</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
